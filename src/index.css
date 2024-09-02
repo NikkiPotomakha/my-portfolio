@@ -11,5 +11,10 @@ body {
   color: #000;
   background-color: #fff;
 }
-
+:root {
+  --white: #fff;
+  --black: #000000;
+  --light: #FFFEFE;
+  --brown: rgb(122, 42, 24);
+}
 

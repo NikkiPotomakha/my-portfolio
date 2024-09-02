@@ -38,7 +38,7 @@ z-index: 30;
 
 .menu-item {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
     color: #000;
     position: relative;
@@ -62,4 +62,60 @@ z-index: 30;
     width: 100%;
     transform: translateY(0);
     opacity: 1;
+}
+
+.contact-btn {
+    font-family: "Roboto", sans-serif;
+    display:flex;
+    font-weight: 500;
+    font-size: 15px;
+    align-items:center;
+    justify-content:last baseline;
+    color:#000;
+    background: linear-gradient(90 deg #7A2A18 0%, #7A2A18 80%);
+    padding: 0.8rem 2.5rem;
+    border: none;
+    outline: 1.5px solid transparent;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.3 ease;
+
+}
+
+.contact-btn:hover {
+    color: #fff;
+    background: #7A2A18;
+    outline: 1.5px solid #7A2A18;
+}
+
+.menu-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 0.4rem;
+    color: #fff;
+    background: linear-gradient(90 deg #7A2A18 0%, #7A2A18 80%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.menu-btn:hover {
+    color: #7A2A18;
+    background: #000;
+    border: 1px solid #7A2A18;
+}
+
+@media (max-width: 769px) {
+    .menu-btn {
+        display: block;
+    }
+    .nav-content ul {
+        display: none;
+    }
 }
