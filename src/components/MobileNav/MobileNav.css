@@ -1,0 +1,39 @@
+.mobile-menu {
+width: 100vm;
+height: 100vm;
+display: none;
+background-color: #fff;
+position: fixed;
+left: 0;
+top: 0;
+z-index: 999 !important;
+opacity: 0;
+transition: all 0.3s ease;
+transform: translateX(-100vw);
+}
+
+.mobile-menu-container {
+    width: 60vw;
+    height: 100vw;
+    background-color: #fff;
+    padding: 2rem;
+}
+
+.mobile-menu:active {
+    opacity: 1;
+    transform: translateX();
+}
+
+.mobile-menu ul {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    list-style: none;
+    margin-left: -2rem;
+}
+
+@media (max-width: 769px) {
+    .mobile-menu {
+        display: block;
+    }
+}
