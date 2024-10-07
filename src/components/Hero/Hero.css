@@ -1,58 +1,52 @@
 
 .hero-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
   flex-direction: column;
   text-align: center;
 }
 
-.hero-title h1 {
-font-family: "Playfair Display", sans-serif;
-font-size: 120px;
-font-weight: 400;
+.hero-content h1 {
+font-family: "Qwitcher Grypen", cursive;
+font-size: 90px;
+font-weight: 500;
 display: flex;
-flex-direction: column;
-align-items: center;
-max-width: 1000px;
 }
 
  .hero-content h2 {  
     font-family: "Playfair Display", sans-serif;
-    font-size: 38px;
+    font-size: 37px;
     font-weight: 400;
-    margin: 20px 0; 
+    margin: 20px 0;  
 }
 
 .hero-content p {
     font-family: "Playfair Display", sans-serif;
-    font-size: 22px;
-    line-height: 1.6;
-    max-width: 600px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
     margin: 0 auto; 
+    height: auto;
 }
 
 .hero-content {
   position: absolute;
-  top: 50%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  padding: 10px;
+  top: 15%;
+  left: 60%;
+  transform: translate(-25%, -30%);
+  padding: 30px;
+  max-height: 488px;
 }
 
 .hero-img-container {
-  flex-direction:column;
-  align-items: center;
-  max-width: 1000px;
+  transform: translate(-25%, 5%);
 }
 
 .hero-img-container img {
-    background-image: url(/src/images/Frame\ 2.png);
-    min-width: 778px;
-    min-height: 1023px;
+    background-image: url(/src/images/Me.png);
+    min-width: 663px;
+    min-height: 895px;
     background-repeat: no-repeat;
-
 }
 
 .icon-title {
@@ -61,4 +55,66 @@ max-width: 1000px;
     font-weight: 400;
     display: flex;
     text-align: left;
+}
+
+.tech-icon {
+  font-size: 45px;
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  align-items: center;
+  margin: 6rem;
+  
+}
+
+.tech-icon > div {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.tech-icon > div > img {
+  width: 45rem;
+  transition: all 0.3 ease;
+}
+.hero-icon {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.4rem;
+  border: 1.5px solid #000;
+}
+
+.hero-icon {
+  width: 3rem;
+  height: auto;
+  transition: all 0.3 ease;
+}
+
+.hero-icon:hover {
+  transform: translateY(-0.5rem);
+}
+
+@media (max-width: 1025px) {
+  .hero-content h1 {
+    font-size: 70px;
+  }
+
+  .hero-content h2 {
+    font-size: 25px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .hero-img-container > div > img {
+    width: 15rem;
+  }
+
+  .hero-container {
+    display: block;
+}
 }
