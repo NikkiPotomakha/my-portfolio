@@ -43,7 +43,7 @@ display: flex;
 }
 
 .hero-img-container img {
-    background-image: url(/src/images/Me.png);
+    background-image: url(/src/images/Me.webp);
     min-width: 663px;
     min-height: 895px;
     background-repeat: no-repeat;
@@ -98,6 +98,7 @@ display: flex;
 }
 
 @media (max-width: 1025px) {
+
   .hero-content h1 {
     font-size: 70px;
   }
@@ -113,8 +114,4 @@ display: flex;
   .hero-img-container > div > img {
     width: 15rem;
   }
-
-  .hero-container {
-    display: block;
-}
 }
