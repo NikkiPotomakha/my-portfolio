@@ -1,19 +1,22 @@
 import React from 'react'
 import './Hero.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faFigma } from "@fortawesome/free-brands-svg-icons";
-import { faHtml5 } from "@fortawesome/free-brands-svg-icons";
-import { faCss3 } from "@fortawesome/free-brands-svg-icons";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faJs } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faFigma,
+  faHtml5,
+  faCss3,
+  faReact,
+  faJs,
+} from "@fortawesome/free-brands-svg-icons";
+import Me from "../../images/Me.webp";
 
 const Hero = () => {
   return (
     <section className="hero-section">
       <div className="hero-container">
         <div className="hero-img-container">
-          <img src="/src/images/Me.webp" alt="" />
+          <img src={Me} alt="Veronika" />
         </div>
         <div className="hero-content">
           <h1>Hi, I'm Veronika</h1>
@@ -26,7 +29,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-
       <div className="tech-icon">
         <div className="icon-title">Tech skills</div>
         <div className="hero-icon">

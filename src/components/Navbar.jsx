@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './styles.css/Navbar.css';
 import MobileNav from './MobileNav/MobileNav';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 const [openMenu, setOpenMenu] = useState(false);
@@ -54,12 +55,9 @@ const [openMenu, setOpenMenu] = useState(false);
               </button>
             </ul>
             <button className="menu-btn" onClick={toggleMenu}>
-              <span
-                className={`/src/icons/menu.svg`}
-                style={{ fontSize: "1.8rem" }}
-              >
-                {openMenu ? "close" : "menu"}
-              </span>
+              <div className="menu-btnn">
+                <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />
+              </div>
             </button>
           </div>
         </nav>
