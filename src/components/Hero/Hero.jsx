@@ -9,7 +9,7 @@ import {
   faReact,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
-import Me from "../../images/Me.webp";
+import Me from '../../images/Me.jpg';
 
 const Hero = () => {
   return (

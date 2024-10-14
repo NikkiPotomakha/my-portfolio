@@ -2,102 +2,78 @@
 .hero-container {
   display: flex;
   align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.hero-content h1 {
-font-family: "Qwitcher Grypen", cursive;
-font-size: 90px;
-font-weight: 500;
-display: flex;
-}
-
- .hero-content h2 {  
-    font-family: "Playfair Display", sans-serif;
-    font-size: 37px;
-    font-weight: 400;
-    margin: 20px 0;  
-}
-
-.hero-content p {
-    font-family: "Playfair Display", sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: center;
-    margin: 0 auto; 
-    height: auto;
-}
-
-.hero-content {
-  position: absolute;
-  top: 15%;
-  left: 60%;
-  transform: translate(-25%, -30%);
-  padding: 30px;
-  max-height: 488px;
-}
-
-.hero-img-container {
-  transform: translate(-25%, 5%);
+  justify-content: space-between; /* Додає рівномірний простір між елементами */
+  text-align: left;
+  padding: 50px; /* Додає відступи */
+  gap: 2rem; /* Додає проміжок між текстом і зображенням */
 }
 
 .hero-img-container img {
-    background-image: url(/src/images/Me.webp);
-    min-width: 663px;
-    min-height: 895px;
-    background-repeat: no-repeat;
+  max-width: 265px;
+  border-radius: 3%;
+  object-fit: cover;
 }
 
-.icon-title {
-    font-family: "Playfair Display", sans-serif;
-    font-size: 40px;
-    font-weight: 400;
-    display: flex;
-    text-align: left;
+.hero-content {
+  max-width: 600px; /* Задаємо обмежену ширину для тексту */
+}
+
+.hero-content h1 {
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 85px;
+  font-weight: 500;
+}
+
+.hero-content h2 {  
+  font-family: "Playfair Display", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 20px 0;  
+}
+
+.hero-content p {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0 auto; 
 }
 
 .tech-icon {
   font-size: 45px;
   display: flex;
-  gap: 5rem;
-  flex-direction: row;
+  gap: 2rem; /* Проміжок між іконками */
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin: 6rem;
-  
+  margin-top: -20px;
 }
 
-.tech-icon > div {
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
-}
-.tech-icon > div > img {
-  width: 45rem;
-  transition: all 0.3 ease;
-}
-.hero-icon {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  align-items:center;
-  justify-content: center;
+.icon-title {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 25px;
+   font-weight: 400;
+  margin-bottom: 0; /* Прибираємо зайві відступи знизу */
+  margin-right: 20px; /* Відступ між заголовком та іконками */
   text-align: center;
-  border-radius: 0.4rem;
-  border: 1.5px solid #000;
+  line-height: 45px; /* Щоб заголовок був на одній лінії з іконками */
 }
 
 .hero-icon {
   width: 3rem;
   height: auto;
-  transition: all 0.3 ease;
+  transition: all 0.3s ease;
 }
 
 .hero-icon:hover {
   transform: translateY(-0.5rem);
 }
 
+/* Адаптивність */
 @media (max-width: 1025px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .hero-content h1 {
     font-size: 70px;
@@ -111,7 +87,11 @@ display: flex;
     font-size: 16px;
   }
 
-  .hero-img-container > div > img {
-    width: 15rem;
+  .hero-img-container img {
+    max-width: 150px; /* Менше зображення на мобільних пристроях */
+  }
+   .tech-icon {
+    margin-top: -10px; /* Менший відступ для мобільних */
+    
   }
 }

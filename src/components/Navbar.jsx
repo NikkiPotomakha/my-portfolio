@@ -22,7 +22,6 @@ const [openMenu, setOpenMenu] = useState(false);
                 V<span className="logo link">P</span>
               </a>
             </div>
-
             <ul>
               <li>
                 <a href="" className="menu-item">
@@ -49,9 +48,8 @@ const [openMenu, setOpenMenu] = useState(false);
                   CONTACT
                 </a>
               </li>
-
               <button className="contact-btn" onClick={() => {}}>
-                Hire Me
+                Hire me
               </button>
             </ul>
             <button className="menu-btn" onClick={toggleMenu}>
