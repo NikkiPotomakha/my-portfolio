@@ -1,7 +1,7 @@
 import frontend from './icons/frontend.svg'
-import backend from "./icons/frontend.svg";
-import tools from "./icons/frontend.svg";
-import softskills from "./icons/frontend.svg";
+import backend from "./icons/backend.svg";
+import tools from "./icons/tools.svg";
+import softskills from "./icons/softskills.svg";
 
 
 export const SKILLS = [
