@@ -1,0 +1,13 @@
+.skills-card {
+    
+    border-radius: 0.65rem;
+    border: 1.5px solid #ca8ec6;
+    padding: 2.5rem;
+    text-align: center;
+    background: #fff;
+    color: #ca8ec6;
+    position: relative;
+    backdrop-filter: blur(1rem);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
