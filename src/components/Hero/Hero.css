@@ -11,17 +11,18 @@
 .hero-img-container img {
   max-width: 265px;
   border-radius: 3%;
-  object-fit: cover;
+  margin-left: 150px;
 }
 
 .hero-content {
-  max-width: 600px; /* Задаємо обмежену ширину для тексту */
+  max-width: 700px; /* Задаємо обмежену ширину для тексту */
 }
 
 .hero-content h1 {
   font-family: "Qwitcher Grypen", cursive;
   font-size: 85px;
   font-weight: 500;
+  margin-left: 100px;
 }
 
 .hero-content h2 {  
@@ -88,10 +89,22 @@
   }
 
   .hero-img-container img {
-    max-width: 150px; /* Менше зображення на мобільних пристроях */
+    max-width: 150px;
+    margin-left: 10px;
+     /* Менше зображення на мобільних пристроях */
   }
    .tech-icon {
     margin-top: -10px; /* Менший відступ для мобільних */
     
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+  }
+   .hero-content h1 {
+    font-size: 70px;
+    margin-left: 20px;
   }
 }
