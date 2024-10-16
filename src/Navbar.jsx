@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import './Navbar.css';
+import './components/styles.css/Navbar.css';
 import MobileNav from './components/MobileNav/MobileNav';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+
+
 
 const Navbar = () => {
 const [openMenu, setOpenMenu] = useState(false);
@@ -18,33 +20,33 @@ const [openMenu, setOpenMenu] = useState(false);
         <nav className="nav-wrapper">
           <div className="nav-content">
             <div className="logo-icon">
-              <a className="logo link" href="/src/App.jsx">
+              <a className="logo link" href="/">
                 V<span className="logo link">P</span>
               </a>
             </div>
             <ul>
               <li>
-                <a href="" className="menu-item">
+                <a href="/" className="menu-item">
                   HOME
                 </a>
               </li>
               <li>
-                <a href="" className="menu-item">
-                  ABOUT ME
+                <a href="/skills" className="menu-item">
+                  SKILLS
                 </a>
               </li>
               <li>
-                <a href="" className="menu-item">
+                <a href="/education" className="menu-item">
                   EDUCATION
                 </a>
               </li>
               <li>
-                <a href="" className="menu-item">
+                <a href="/projects" className="menu-item">
                   PROJECTS
                 </a>
               </li>
               <li>
-                <a href="" className="menu-item">
+                <a href="/contact" className="menu-item">
                   CONTACT
                 </a>
               </li>
