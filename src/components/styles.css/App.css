@@ -2,7 +2,7 @@
   --white: #fff;
   --black: #000000;
   --light: #FFFEFE;
-  --brown: #7A2A18;
+  --violet: linear-gradient(90deg, #e372e9 0%, #d2c3d0 100%);;
 }
 
 .container {

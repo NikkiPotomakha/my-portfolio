@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css/Navbar.css';
-import MobileNav from './MobileNav/MobileNav';
+import MobileNav from '../MobileNav/MobileNav';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
