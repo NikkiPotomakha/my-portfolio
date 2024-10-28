@@ -27,7 +27,7 @@
 
 .hero-content h2 {  
   font-family: "Playfair Display", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 400;
   margin: 20px 0;  
 }
@@ -91,10 +91,10 @@
   .hero-img-container img {
     max-width: 150px;
     margin-left: 10px;
-     /* Менше зображення на мобільних пристроях */
+    
   }
    .tech-icon {
-    margin-top: -10px; /* Менший відступ для мобільних */
+    margin-top: -10px;
     
   }
 }

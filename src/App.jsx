@@ -3,6 +3,7 @@ import Navbar from "../src/Navbar";
 import Hero from "./components/Hero/Hero";
 import Skills from './components/Skills/Skills';
 import "./components/styles.css/App.css"
+import Qualification from "./components/Qualification/Qualification";
 
 
 
@@ -13,6 +14,7 @@ const App = () => {
       <div className="container">
         <Hero />
         <Skills />
+        <Qualification />
       </div>
     </>
   );
