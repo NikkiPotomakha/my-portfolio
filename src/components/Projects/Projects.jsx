@@ -1,19 +1,19 @@
 import React from 'react'
 import "./Projects.css"
-import Project_1 from "../../images/Project 1.jpg";
-import Project_2 from "../../images/Project 2.jpg";
-import Project_3 from "../../images/Project 3.jpg";
+import mywork_data from '../../project_data';
 
 const Projects = () => {
     return (
         <div className='mywork'>
             <div className="mywork_title">
                 <h1>My Latest Projects</h1>
-                <img src={Project_1} alt="" />
+              
             </div>
             <div className="mywork_container">
-                
-      </div>
+                {mywork_data.map((work, index) => {
+                 return <img key={index} src={work.w_img} alt="" />
+             })}   
+            </div>
     </div>
   )
 }
