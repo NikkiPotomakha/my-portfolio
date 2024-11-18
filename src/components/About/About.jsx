@@ -1,5 +1,6 @@
 import React from 'react'
 import Book from "../../images/Book.jpg";
+
 import {
   faGithub,
   faHtml5,
@@ -14,18 +15,22 @@ const About = () => {
     <div className="about_section">
       <div className="about_container">
         <h3 className="about_title">About Me</h3>
+        <h4 className='about_subtitle'>Let's diving into my world</h4>
         <p className="about_text">
           Learn more about who I am, what I do and what inspires me
         </p>
       </div>
-      <div className="card current_read">
+      <div>
+        
+          <div className="card current_read">
+         
         <h4>My reads</h4>
         <p>Taming Tigers - Jim Lawless</p>
         <div className="book_image">
-          <img src={Book} alt="Taming Tigers" />
+            <img src={Book} alt="Taming Tigers" />
+
         </div>
       </div>
-
       {/* My Tech Stacks Section */}
       <div className="card tech_stack">
         <h4>My Tech Stacks</h4>
@@ -51,7 +56,8 @@ const About = () => {
           <span>Social-animal 😍</span>
         </div>
       </div>
-    </div>
+      </div>
+      </div>
   );
 }
 
