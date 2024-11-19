@@ -1,0 +1,33 @@
+.contact_container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+}
+
+.contact-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+.contact-info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+.contact-card {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+.contact-card-icon {
+    color: #575965;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-form {
+width: 360px;
+}
