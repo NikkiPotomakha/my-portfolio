@@ -3,13 +3,14 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 const Contact = () => {
   return (
     <section className="contact section" id="contact">
       <h2 className="section_title">Get in touch</h2>
       <span className="section_subtitle">Contact Me</span>
 
-      <div className="contact_container container grid">
+      <div className="contact_container">
         <div className="contact-content">
           <h3 className="contact-title">Talk to me</h3>
           <div className="contact-info">
@@ -41,7 +42,7 @@ const Contact = () => {
               <span className="contact-card-data">+48793579169</span>
 
               <a href="" className="contact-button">
-                Write me <i className="contact-button-icon"></i>
+                Call me <i className="contact-button-icon"></i>
               </a>
             </div>
           </div>
@@ -61,7 +62,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact-form-div">
+            <div className="contact-form">
               <label className="contact-form-tag">Mail</label>
               <input
                 type="email"
