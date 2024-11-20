@@ -1,44 +1,48 @@
 .contact_container {
-    display: flex; /* Встановлює контейнер як flexbox */
-    flex-direction: row; /* Горизонтальне розташування */
-    justify-content: center; /* Вирівнювання по горизонталі */
-     align-items: flex-start; /* Вирівнювання елементів по верхньому краю */
-    column-gap: 6rem; /* Відстань між лівим і правим блоками */
+    display: flex; /* Default container as flex */
+    flex-direction: row; /* Horizontal layout */
+    justify-content: center; /* Align horizontally */
+    align-items: flex-start; /* Align items at the top */
+    column-gap: 6rem; /* Space between left and right sections */
     padding-bottom: 3rem;
-    margin-top: 2rem; /* Додатковий відступ для вирівнювання секції */
-  
+    margin-top: 2rem; /* Extra margin to adjust the section */
 }
+
 .section_title {
     font-size: 29px;
-justify-content: center;
-display: flex;
-margin-bottom: 1rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1rem;
 }
+
 .section_subtitle {
-justify-content: center;
-display: flex;
-margin-bottom: 3rem;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 3rem;
 }
+
 .contact-title {
     text-align: center;
     font-size: 20px;
     margin-bottom: 1.5rem;
 }
+
 .contact-info {
     display: grid;
-    row-gap: 1.5rem; /* Відступи між картками контактної інформації */
-    grid-template-columns: 300px; /* Ширина кожної картки */
-    align-self: flex-start; /* Забезпечення вирівнювання по верхньому краю */
-    margin-top: 0; /* Забираємо зайві відступи зверху */
+    row-gap: 1.5rem; /* Space between contact information cards */
+    grid-template-columns: 300px; /* Width of each card */
+    align-self: flex-start; /* Align content to the top */
+    margin-top: 0; /* Remove extra margin at the top */
 }
+
 .contact-card {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 1rem;
     border-radius: 0.75rem;
     text-align: center;
-    
 }
+
 .contact-card-icon {
     color: #575965;
     font-size: 1.5rem;
@@ -47,86 +51,92 @@ margin-bottom: 3rem;
 
 .contact-card-title,
 .contact-card-data {
-font-size: 17px;
+    font-size: 17px;
 }
+
 .contact-card-title {
     font-size: 15px;
 }
+
 .contact-card-data {
     display: block;
     margin-bottom: 0.5rem;
 }
+
 .contact-button {
     color: #575965;
     font-size: 15px;
     display: inline-flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     column-gap: 0.25rem;
-    
 }
+
 .contact-button-icon {
     font-size: small;
     transition: 0.3s;
 }
+
 .contact-button:hover,
-.contact-button-icon {
+.contact-button-icon:hover {
     transform: translate(0.25rem);
 }
+
 .contact-form {
-  display: flex;
-    flex-direction: column; /* Вертикальне розташування елементів форми */
-    align-items: flex-start; /* Вирівнювання форми по лівому краю */
-    gap: 1.5rem; /* Відступ між полями форми */
-    width: 100%; /* Займає повну ширину секції */
-    max-width: 400px; /* Обмежує максимальну ширину форми */
-   
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align form to the left */
+    gap: 1.5rem; /* Gap between form fields */
+    width: 100%; /* Full width of the section */
+    max-width: 400px; /* Max width of the form */
 }
 
 .contact-form-div {
-position: relative;
-height: 4rem;
-width: 100%;
-
+    position: relative;
+    height: 4rem;
+    width: 100%;
 }
+
 .contact-form-input {
-   width: 100%; 
+    width: 100%;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    color:#575965;
+    color: #575965;
     border-radius: 0.75rem;
     padding: 1.5rem;
     z-index: 1;
-    height: 100%; /* Встановлення висоти */
+    height: 100%;
 }
+
 .contact-form-tag {
-     width: 100%;
     top: -0.75rem;
     left: 1.25rem;
     font-size: small;
     padding: 0.25rem;
-    background-color: #FFF;
-    z-index: 10;
+    background-color: #fff;
+    z-index: 7;
 }
+
 .contact-form-area {
     height: auto;
 }
+
 .contact-form-area textarea {
     resize: none;
     width: 100%;
 }
+
 .button_contact {
     font-family: "Playfair Display", sans-serif;
-    display:flex;
+    display: flex;
     font-weight: 500;
     font-size: 13px;
-    align-items:center;
-    justify-content:center;
-    color:#000;
+    align-items: center;
+    justify-content: center;
+    color: #000;
     padding: 0.8rem 2.5rem;
     border: none;
     border-radius: 0.5rem;
     cursor: pointer;
-
 }
 
 .button_contact:hover {
@@ -134,4 +144,134 @@ width: 100%;
     background: #ca8ec6;
     outline: 1.5px solid #ca8ec6;
     transition: 0.3s;
+}
+
+/* Media Queries for Tablet View (max-width: 1025px) */
+@media screen and (max-width: 1025px) {
+    .contact_container {
+        row-gap: 2rem;
+        display: flex;
+    }
+
+    .contact-info {
+        column-gap: 1rem;
+    }
+
+    .contact-card {
+        width: 85%;
+    }
+
+    .contact-card-data {
+        font-size: small;
+    }
+
+    .contact-form {
+        width: 80%;
+        max-width: 500px;
+        display: flex;
+    }
+
+    .contact-title {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Media Queries for Mobile View (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .contact_container {
+        flex-direction: row;
+        row-gap: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+
+    .contact-card {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .section_subtitle {
+        font-size: 18px;
+    }
+
+    .contact-title {
+        font-size: 16px;
+        justify-content: center;
+    }
+
+    .contact-form-tag {
+        font-size: 14px;
+    }
+
+    .button_contact {
+        font-size: 12px;
+        padding: 0.6rem 2rem;
+    }
+
+    .contact-form-input {
+        padding: 1.2rem;
+    }
+}
+
+/* Media Queries for Smaller Mobile View (max-width: 576px) */
+@media screen and (max-width: 576px) {
+    .contact_container {
+       
+        row-gap: 1.5rem; /* Reduced gap between sections */
+        display: flex;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr; /* Stack contact cards vertically */
+        row-gap: 1rem; /* Reduced gap between contact cards */
+    }
+
+    .contact-card {
+        width: 100%; /* Ensure cards are full width */
+    }
+
+    .contact-form {
+        width: 90%;
+        max-width: 100%; /* Full width for form on small devices */
+    }
+
+    .section_title {
+        font-size: 22px; /* Slightly smaller title for small screens */
+    }
+
+    .section_subtitle {
+        font-size: 16px; /* Adjust subtitle size for smaller screens */
+    }
+
+    .contact-title {
+        font-size: 14px; /* Smaller title for mobile */
+        justify-content: center;
+    }
+
+    .contact-form-tag {
+        font-size: 13px; /* Smaller font for labels */
+    }
+
+    .button_contact {
+        font-size: 11px; /* Smaller button text for mobile */
+        padding: 0.5rem 1.8rem; /* Adjust button padding */
+    }
+
+    .contact-form-input {
+        padding: 1rem; /* Smaller padding inside inputs */
+    }
 }
