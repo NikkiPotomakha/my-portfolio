@@ -45,7 +45,7 @@ const Contact = () => {
               <h3 className="contact_card_title">Phone</h3>
               <span className="contact-card-data">+48793579169</span>
 
-              <a href="" className="contact-button">
+              <a href="tel:+48793579169" className="contact-button">
                 Call me{" "}
                 <i className="contact-button-icon">
                   <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
@@ -69,7 +69,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact-form">
+            <div className="contact-form-div">
               <label className="contact-form-tag">Mail</label>
               <input
                 type="email"
