@@ -56,7 +56,7 @@ const Contact = () => {
         </div>
 
         <div className="contact-content">
-          <h3 className="contact_title">Write me your project</h3>
+          <h3 className="contact-title">Write me your project</h3>
 
           <form className="contact-form">
             <div className="contact-form-div">
@@ -90,7 +90,7 @@ const Contact = () => {
               ></textarea>
             </div>
 
-            <button className="contact-btn" onClick={() => {}}>
+            <button className="button_contact" onClick={() => {}}>
               Send
             </button>
           </form>
