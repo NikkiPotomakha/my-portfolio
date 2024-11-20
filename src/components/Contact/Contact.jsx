@@ -3,6 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -28,7 +29,10 @@ const Contact = () => {
                 href="mailto:veronikapotomakha@gmail.com"
                 className="contact-button"
               >
-                Write me <i className="contact-button-icon"></i>
+                Write me{" "}
+                <i className="contact-button-icon">
+                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                </i>
               </a>
             </div>
 
@@ -42,7 +46,10 @@ const Contact = () => {
               <span className="contact-card-data">+48793579169</span>
 
               <a href="" className="contact-button">
-                Call me <i className="contact-button-icon"></i>
+                Call me{" "}
+                <i className="contact-button-icon">
+                  <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
+                </i>
               </a>
             </div>
           </div>
@@ -72,7 +79,7 @@ const Contact = () => {
               />
             </div>
 
-            <div className="contact-form-div">
+            <div className="contact-form-div contact-form-area">
               <label className="contact-form-tag">Message</label>
               <textarea
                 name="message"
