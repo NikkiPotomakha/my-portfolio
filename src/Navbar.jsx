@@ -55,9 +55,7 @@ const [openMenu, setOpenMenu] = useState(false);
               </button>
             </ul>
             <button className="menu-btn" onClick={toggleMenu}>
-              <div className="menu-btn">
                 <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />
-              </div>
             </button>
           </div>
         </nav>
