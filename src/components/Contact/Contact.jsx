@@ -1,11 +1,30 @@
 import "./Contact.css"
-import React from 'react'
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_o83hjfo", "template_13qbq4g", form.current, {
+        publicKey: "JQCxV0xllJqu2FztB",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+  };
   return (
     <section className="contact section" id="contact">
       <h2 className="section_title">Get in touch</h2>
@@ -58,7 +77,7 @@ const Contact = () => {
         <div className="contact-content">
           <h3 className="contact-title">Write me your project</h3>
 
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="contact-form-div">
               <label className="contact-form-tag">Name</label>
               <input
