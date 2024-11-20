@@ -13,17 +13,13 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_o83hjfo", "template_13qbq4g", form.current, {
-        publicKey: "JQCxV0xllJqu2FztB",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-        },
-        (error) => {
-          console.log("FAILED...", error.text);
-        }
-      );
+      .sendForm(
+        "service_o83hjfo",
+        "template_13qbq4g",
+        form.current, 
+        "JQCxV0xllJqu2FztB",
+      )
+      e.target.reset()
   };
   return (
     <section className="contact section" id="contact">
