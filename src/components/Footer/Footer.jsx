@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -17,7 +18,9 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#qualification" className="footer_link">Education</a>
+            <a href="#qualification" className="footer_link">
+              Education
+            </a>
           </li>
           <li>
             <a href="#projects" className="footer_link">
@@ -25,9 +28,33 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-        <div className='footer_social'>
-          
+        <div className="footer_social">
+          <a
+            href="https://www.facebook.com/"
+            className="footer-social_link"
+            target="_blank"
+          >
+            <i className="icon_facebook"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/feed/"
+            className="footer-social_link"
+            target="_blank"
+          >
+            <i className="icon_linkedIn"></i>
+          </a>
+
+          <a
+            href="https://github.com/"
+            className="footer-social_link"
+            target="_blank"
+          >
+            <i className="icon_github"></i>
+          </a>
         </div>
+
+        <span className='footer_copy'>&#169; Crypticalcoder. All rights reserved</span>
       </div>
     </div>
   );
