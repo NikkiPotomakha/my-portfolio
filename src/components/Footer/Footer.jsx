@@ -10,22 +10,22 @@ const Footer = () => {
         <h1 className="footer_title">VP</h1>
         <ul className="footer_list">
           <li>
-            <a href="#About" className="footer_link">
+            <a href="#about" className="footer_link">
               About
             </a>
           </li>
           <li>
-            <a href="#Skills" className="footer_link">
+            <a href="#skills" className="footer_link">
               Skills
             </a>
           </li>
           <li>
-            <a href="#Qualification" className="footer_link">
+            <a href="#education" className="footer_link">
               Education
             </a>
           </li>
           <li>
-            <a href="#Projects" className="footer_link">
+            <a href="#projects" className="footer_link">
               Projects
             </a>
           </li>
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
 
         <span className="footer_copy">
-          &#169; Crypticalcoder. All rights reserved
+          &#169; Veronika Potomakha. All rights reserved
         </span>
       </div>
     </div>
