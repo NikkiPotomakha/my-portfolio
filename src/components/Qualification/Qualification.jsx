@@ -5,7 +5,7 @@ import { faGraduationCap, faCalendarDays } from "@fortawesome/free-solid-svg-ico
 
 const Qualification = () => {
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="education">
       <h2 className="section__title">Qualification</h2>
       <span className="section__subtitle">My personel journey</span>
       <div className="qualification__container container">
