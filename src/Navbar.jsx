@@ -31,6 +31,11 @@ const [openMenu, setOpenMenu] = useState(false);
                 </a>
               </li>
               <li>
+                <a href="/about" className="menu-item">
+                  ABOUT
+                </a>
+              </li>
+              <li>
                 <a href="/skills" className="menu-item">
                   SKILLS
                 </a>
@@ -55,7 +60,7 @@ const [openMenu, setOpenMenu] = useState(false);
               </button>
             </ul>
             <button className="menu-btn" onClick={toggleMenu}>
-                <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />
+              <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />
             </button>
           </div>
         </nav>
