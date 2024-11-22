@@ -1,29 +1,31 @@
 import React from 'react';
 import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
     <div className="footer">
       <div className="footer_container container">
-        <h1 className="footer_title">Potomakha</h1>
+        <h1 className="footer_title">VP</h1>
         <ul className="footer_list">
           <li>
-            <a href="#about" className="footer_link">
+            <a href="#About" className="footer_link">
               About
             </a>
           </li>
           <li>
-            <a href="#skills" className="footer_link">
+            <a href="#Skills" className="footer_link">
               Skills
             </a>
           </li>
           <li>
-            <a href="#qualification" className="footer_link">
+            <a href="#Qualification" className="footer_link">
               Education
             </a>
           </li>
           <li>
-            <a href="#projects" className="footer_link">
+            <a href="#Projects" className="footer_link">
               Projects
             </a>
           </li>
@@ -34,7 +36,9 @@ const Footer = () => {
             className="footer-social_link"
             target="_blank"
           >
-            <i className="icon_facebook"></i>
+            <i className="icon_facebook">
+              <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
+            </i>
           </a>
 
           <a
@@ -42,7 +46,9 @@ const Footer = () => {
             className="footer-social_link"
             target="_blank"
           >
-            <i className="icon_linkedIn"></i>
+            <i className="icon_linkedIn">
+              <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+            </i>
           </a>
 
           <a
@@ -50,11 +56,15 @@ const Footer = () => {
             className="footer-social_link"
             target="_blank"
           >
-            <i className="icon_github"></i>
+            <i className="icon_github">
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </i>
           </a>
         </div>
 
-        <span className='footer_copy'>&#169; Crypticalcoder. All rights reserved</span>
+        <span className="footer_copy">
+          &#169; Crypticalcoder. All rights reserved
+        </span>
       </div>
     </div>
   );
