@@ -51,7 +51,6 @@ const About = () => {
         <h4>My Persona</h4>
         <p>Know me as a person</p>
         <div className="persona_tags">
-          <span>Night-Owl 🦉</span>
           <span>Traveller ✈️</span>
           <span>Social-animal 😍</span>
         </div>
