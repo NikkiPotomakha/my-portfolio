@@ -36,22 +36,22 @@ const [openMenu, setOpenMenu] = useState(false);
                 </a>
               </li>
               <li>
-                <a href="/skills" className="menu-item">
+                <a href="#skills" className="menu-item">
                   SKILLS
                 </a>
               </li>
               <li>
-                <a href="/education" className="menu-item">
+                <a href="#education" className="menu-item">
                   EDUCATION
                 </a>
               </li>
               <li>
-                <a href="/projects" className="menu-item">
+                <a href="#projects" className="menu-item">
                   PROJECTS
                 </a>
               </li>
               <li>
-                <a href="/contact" className="menu-item">
+                <a href="#contact" className="menu-item">
                   CONTACT
                 </a>
               </li>
