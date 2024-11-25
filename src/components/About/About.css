@@ -1,6 +1,6 @@
 .about_section {
-    background: linear-gradient(90deg, #1d1d2c, #2a2a40); /* Темний градієнт */
-    color: #ffffff;
+    background: #fff; /* Темний градієнт */
+    color: #212121;
     padding: 50px 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -14,20 +14,20 @@
 .about_title {
     font-size: 36px;
     font-weight: bold;
-    color: #00dfc4;
+    color: #212121;
     margin-bottom: 20px;
 }
 
 .about_subtitle {
     font-size: 24px;
     font-weight: 500;
-    color: #f4f4f4;
+    color: #212121;
     margin-bottom: 30px;
 }
 
 .about_text {
     font-size: 16px;
-    color: #b0b0b0;
+    color: #222020;
     margin-bottom: 40px;
 }
 
@@ -39,7 +39,7 @@
 }
 
 .card {
-    background: linear-gradient(145deg, #24243e, #1b1b32); /* Темний, об’ємний стиль */
+    background: linear-gradient(90deg, #e372e9 0%, #d2c3d0 100%); /* Темний, об’ємний стиль */
     border-radius: 16px;
     padding: 20px;
     width: 100%;
@@ -55,24 +55,24 @@
 
 .card h4 {
     font-size: 20px;
-    color: #00dfc4;
+    color: #9a1191;
 }
 
 .card p {
     font-size: 14px;
-    color: #cccccc;
+    color: #540450;
     text-align: center;
 }
 
 .current_read .book_image img {
-   
-    border-radius: 12px;
-    margin-top: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 80% !important; /* Зменшує розмір і пріоритетно застосовує стиль */
+    height: auto !important; /* Зберігає пропорції */
+    border-radius: 8px; /* Згладжені кути */
+    margin: 0 auto; /* Центрує */
+    display: block; /* Робить зображення блоковим */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Додає естетичну тінь */
 }
-.book_image {
-width: 100px;
-}
+
 
 .tech_stack_icons {
     display: flex;
@@ -83,7 +83,7 @@ width: 100px;
 
 .tech_stack_icons svg {
     font-size: 32px;
-    color: #00dfc4;
+    color: #430133;
 }
 
 .persona_tags {
@@ -94,7 +94,7 @@ width: 100px;
 }
 
 .persona_tags span {
-    background-color: #4da8da;
+    background-color: #430133;
     color: #ffffff;
     border-radius: 20px;
     padding: 8px 16px;
