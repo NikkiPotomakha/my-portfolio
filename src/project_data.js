@@ -19,7 +19,7 @@ const mywork_data = [
     w_no: 3,
     w_name: "Food Boutique",
     w_img: Project_3,
-    w_link: "https://olehkotynskyi.github.io/project-GROUP_WORK/",
+    w_link: "https://olehkotynskyi.github.io/project-GROUP_WORK_JS/",
   },
 ];
 
