@@ -41,7 +41,6 @@ const Footer = () => {
               <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
             </i>
           </a>
-
           <a
             href="https://www.linkedin.com/feed/"
             className="footer-social_link"
@@ -52,7 +51,6 @@ const Footer = () => {
               <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
             </i>
           </a>
-
           <a
             href="https://github.com/"
             className="footer-social_link"
