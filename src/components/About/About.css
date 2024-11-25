@@ -1,78 +1,105 @@
 .about_section {
-    background-color: linear-gradient(90deg, #6f3072 0%, #20021c 100%); /* Dark background */
-    color: #FFFFFF;
-    padding: 40px;
+    background: linear-gradient(90deg, #1d1d2c, #2a2a40); /* Темний градієнт */
+    color: #ffffff;
+    padding: 50px 20px;
     font-family: 'Roboto', sans-serif;
 }
 
 .about_container {
-    text-align: left;
-    max-width: 800px;
+    text-align: center;
+    max-width: 900px;
     margin: auto;
 }
 
 .about_title {
-    color: #020202;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #00dfc4;
+    margin-bottom: 20px;
 }
 
 .about_subtitle {
-    font-size: 32px;
-    font-weight: bold;
-    color: #F0F8FF;
-    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+}
+
+.about_text {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 40px;
 }
 
 .card_section {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .card {
-    background-color:linear-gradient(90deg, #6f3072 0%, #20021c 100%);;
-    border-radius: 12px;
+    background: linear-gradient(145deg, #24243e, #1b1b32); /* Темний, об’ємний стиль */
+    border-radius: 16px;
     padding: 20px;
-    flex: 1;
-    min-width: 240px;
-    max-width: 300px;
-    color: #D0E1F9;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 280px;
+    color: #e4e4e4;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: #00dfc4;
+}
+
+.card p {
+    font-size: 14px;
+    color: #cccccc;
+    text-align: center;
 }
 
 .current_read .book_image img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+   
+    border-radius: 12px;
     margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.book_image {
+width: 100px;
 }
 
 .tech_stack_icons {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.tech_stack_icons img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #2E3C56;
+.tech_stack_icons svg {
+    font-size: 32px;
+    color: #00dfc4;
 }
 
 .persona_tags {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
 }
 
 .persona_tags span {
-    background-color: #4DA8DA;
-    color: #FFFFFF;
+    background-color: #4da8da;
+    color: #ffffff;
     border-radius: 20px;
-    padding: 5px 12px;
+    padding: 8px 16px;
     font-size: 14px;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
+
