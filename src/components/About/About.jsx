@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css";
 import Book from "../../images/Book.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
