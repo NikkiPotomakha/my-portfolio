@@ -35,6 +35,7 @@ const Footer = () => {
             href="https://www.facebook.com/"
             className="footer-social_link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="icon_facebook">
               <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
@@ -45,6 +46,7 @@ const Footer = () => {
             href="https://www.linkedin.com/feed/"
             className="footer-social_link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="icon_linkedIn">
               <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
@@ -55,6 +57,7 @@ const Footer = () => {
             href="https://github.com/"
             className="footer-social_link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="icon_github">
               <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
