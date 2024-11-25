@@ -1,5 +1,6 @@
+/* Загальні стилі */
 .about_section {
-    background: #fff; /* Темний градієнт */
+    background: #fff;
     color: #212121;
     padding: 50px 20px;
     font-family: 'Roboto', sans-serif;
@@ -31,6 +32,7 @@
     margin-bottom: 40px;
 }
 
+/* Flexbox контейнер */
 .card_section {
     display: flex;
     flex-wrap: wrap;
@@ -38,8 +40,9 @@
     justify-content: center;
 }
 
+/* Карточки */
 .card {
-    background: linear-gradient(90deg, #e372e9 0%, #d2c3d0 100%); /* Темний, об’ємний стиль */
+    background: linear-gradient(90deg, #e372e9 0%, #d2c3d0 100%);
     border-radius: 16px;
     padding: 20px;
     width: 100%;
@@ -51,6 +54,12 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
 }
 
 .card h4 {
@@ -64,16 +73,23 @@
     text-align: center;
 }
 
+/* Анімація для книги */
 .current_read .book_image img {
-    width: 80% !important; /* Зменшує розмір і пріоритетно застосовує стиль */
-    height: auto !important; /* Зберігає пропорції */
-    border-radius: 8px; /* Згладжені кути */
-    margin: 0 auto; /* Центрує */
-    display: block; /* Робить зображення блоковим */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Додає естетичну тінь */
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.current_read .book_image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
 
+/* Анімація для іконок */
 .tech_stack_icons {
     display: flex;
     flex-wrap: wrap;
@@ -84,8 +100,15 @@
 .tech_stack_icons svg {
     font-size: 32px;
     color: #430133;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
+.tech_stack_icons svg:hover {
+    color: #9a1191;
+    transform: scale(1.2);
+}
+
+/* Теги персональних якостей */
 .persona_tags {
     display: flex;
     flex-wrap: wrap;
@@ -101,5 +124,85 @@
     font-size: 14px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Курсор у вигляді руки при наведенні */
+    transition: all 0.3s ease; /* Плавний перехід для всіх властивостей */
 }
 
+/* Анімація при наведенні */
+.persona_tags span:hover {
+    background-color: #9a1191; /* Зміна кольору фону */
+    color: #fff; /* Залишається білим */
+    transform: scale(1.1); /* Невелике збільшення */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Більш яскравий ефект тіні */
+}
+
+/* Анімація при натисканні */
+.persona_tags span:active {
+    transform: scale(0.95); /* Легке стискання */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Менша тінь */
+}
+
+/* Адаптивність */
+@media (max-width: 1024px) {
+    .card_section {
+        gap: 15px;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .about_title {
+        font-size: 30px;
+    }
+
+    .about_subtitle {
+        font-size: 20px;
+    }
+
+    .about_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card_section {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+
+    .about_title {
+        font-size: 28px;
+    }
+
+    .about_subtitle {
+        font-size: 18px;
+    }
+
+    .about_text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about_title {
+        font-size: 24px;
+    }
+
+    .about_subtitle {
+        font-size: 16px;
+    }
+
+    .about_text {
+        font-size: 12px;
+    }
+
+    .tech_stack_icons svg {
+        font-size: 28px;
+    }
+}
