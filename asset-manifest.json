@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.ebdea587.css",
+    "main.js": "/my-portfolio/static/js/main.61dd9770.js",
+    "static/js/453.acca0757.chunk.js": "/my-portfolio/static/js/453.acca0757.chunk.js",
+    "static/media/Project 1.jpg": "/my-portfolio/static/media/Project 1.999365dbc6355b100f0d.jpg",
+    "static/media/Project 2.jpg": "/my-portfolio/static/media/Project 2.1ce685cbcd000ce1e37d.jpg",
+    "static/media/Me.jpg": "/my-portfolio/static/media/Me.2986e7cf9601c33000e4.jpg",
+    "static/media/Project 3.jpg": "/my-portfolio/static/media/Project 3.9c5ca3f63ff4fd6170f8.jpg",
+    "static/media/Book.jpg": "/my-portfolio/static/media/Book.4f1dedf19a3886315e70.jpg",
+    "static/media/tools.svg": "/my-portfolio/static/media/tools.558e1d4edc88e05779b84dc33d07c7ae.svg",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/backend.svg": "/my-portfolio/static/media/backend.04c2bce10446c22319693c1afc3288f3.svg",
+    "static/media/softskills.svg": "/my-portfolio/static/media/softskills.a4beaadeea142688b1b5a0258f0f9169.svg",
+    "static/media/frontend.svg": "/my-portfolio/static/media/frontend.e30f3638c4df9a3fae8ce63d8febade2.svg",
+    "main.ebdea587.css.map": "/my-portfolio/static/css/main.ebdea587.css.map",
+    "main.61dd9770.js.map": "/my-portfolio/static/js/main.61dd9770.js.map",
+    "453.acca0757.chunk.js.map": "/my-portfolio/static/js/453.acca0757.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebdea587.css",
+    "static/js/main.61dd9770.js"
+  ]
+}
