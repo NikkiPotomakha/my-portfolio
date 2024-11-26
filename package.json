@@ -1,8 +1,7 @@
 {
- HEAD
+
   "homepage": "https://github.com/NikkiPotomakha/my-portfolio.git",
-  "homepage": "https://NikkiPotomakha.github.io/my-portfolio",
- bac3b91 (Initial commit)
+
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
