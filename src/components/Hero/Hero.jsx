@@ -13,7 +13,7 @@ import Me from '../../images/Me.jpg';
 
 const Hero = () => {
   return (
-    <section className="hero-section" id="home">
+    <section className="hero_section" id="home">
       <div className="hero-container">
         <div className="hero-img-container">
           <img src={Me} alt="Veronika" />
