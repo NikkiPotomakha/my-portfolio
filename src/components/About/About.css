@@ -108,6 +108,27 @@
     transform: scale(1.2);
 }
 
+/* Стилі для зображення ноутбука */
+.tech_stack .laptop_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tech_stack .laptop_image img {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech_stack .laptop_image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
 /* Теги персональних якостей */
 .persona_tags {
     display: flex;
@@ -124,22 +145,22 @@
     font-size: 14px;
     text-align: center;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    cursor: pointer; /* Курсор у вигляді руки при наведенні */
-    transition: all 0.3s ease; /* Плавний перехід для всіх властивостей */
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 /* Анімація при наведенні */
 .persona_tags span:hover {
-    background-color: #9a1191; /* Зміна кольору фону */
-    color: #fff; /* Залишається білим */
-    transform: scale(1.1); /* Невелике збільшення */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Більш яскравий ефект тіні */
+    background-color: #9a1191;
+    color: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Анімація при натисканні */
 .persona_tags span:active {
-    transform: scale(0.95); /* Легке стискання */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Менша тінь */
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* Адаптивність */
@@ -162,6 +183,11 @@
 
     .about_text {
         font-size: 14px;
+    }
+
+    /* Адаптивні стилі для ноутбука */
+    .tech_stack .laptop_image img {
+        max-width: 130px;
     }
 }
 
@@ -187,6 +213,11 @@
     .about_text {
         font-size: 14px;
     }
+
+    /* Адаптивні стилі для ноутбука */
+    .tech_stack .laptop_image img {
+        max-width: 120px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -204,5 +235,10 @@
 
     .tech_stack_icons svg {
         font-size: 28px;
+    }
+
+    /* Адаптивні стилі для ноутбука */
+    .tech_stack .laptop_image img {
+        max-width: 100px;
     }
 }

@@ -18,6 +18,7 @@
 .footer_link {
     color: #212121;
     text-decoration: none; 
+    scroll-behavior: smooth;
 }
 .footer_link:hover {
 color: #945e90;

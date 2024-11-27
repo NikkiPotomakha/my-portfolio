@@ -13,7 +13,7 @@ import Me from '../../images/Me.jpg';
 
 const Hero = () => {
   return (
-    <section className="hero-section" id='home'>
+    <section className="hero-section" id="home">
       <div className="hero-container">
         <div className="hero-img-container">
           <img src={Me} alt="Veronika" />
@@ -22,7 +22,7 @@ const Hero = () => {
           <h1>Hi, I'm Veronika</h1>
           <h2>Frontend Developer based in Warsaw, Poland.</h2>
           <p>
-            I have a keen eye for design and a knack for bringing web
+            I have a keen eye for design and an aptitude for bringing web
             applications to life. With a solid foundation in HTML, CSS, and
             JavaScript, I specialize in creating responsive, user-friendly
             interfaces that provide seamless experiences across all devices.
