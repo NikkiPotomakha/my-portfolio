@@ -4,7 +4,7 @@ import mywork_data from "../../project_data";
 
 const Projects = () => {
   return (
-    <section className="projects section" id="projects">
+    <section className="projects_section" id="projects">
       <div className="mywork container">
         <div className="mywork_title">
           <h1>My Latest Projects</h1>

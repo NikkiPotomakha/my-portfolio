@@ -6,7 +6,9 @@
     gap: 80px;
     margin: 80px 20px; /* Зменшимо відступи для мобільних */
 }
-
+.projects_section {
+    scroll-margin-top: 100px;
+}
 .mywork_title {
     position: relative;
 }

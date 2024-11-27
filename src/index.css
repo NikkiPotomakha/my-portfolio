@@ -12,6 +12,6 @@ body {
   background-color: #fff;
 }
 
-.about_section, .home_section, .skills_section, .education_section, .projects_section, .contact_section {
-    scroll-margin-top: 80px; /* Налаштуйте це значення залежно від висоти вашого navbar */
+.about_section, .hero_section {
+    scroll-margin-top: 80px;
 }

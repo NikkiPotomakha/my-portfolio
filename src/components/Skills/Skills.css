@@ -2,6 +2,9 @@
     margin: 4rem 0;
     position: relative;
 }
+.skills_section {
+    scroll-margin-top: 125px;
+}
 
 .skills-container h5 {
     font-size: 27px;
