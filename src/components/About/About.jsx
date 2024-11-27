@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import Book from "../../images/Book.jpg";
+import laptop from "../../images/laptop.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -25,7 +26,7 @@ const About = () => {
       <div className="card_section">
         {/* Current Read Card */}
         <div className="card current_read">
-          <h4>My Reads</h4>
+          <h4>My Favourite Book</h4>
           <p>Taming Tigers - Jim Lawless</p>
           <div className="book_image">
             <img src={Book} alt="Taming Tigers" />
@@ -46,17 +47,21 @@ const About = () => {
             <FontAwesomeIcon icon={faJs} />
             <FontAwesomeIcon icon={faReact} />
           </div>
+          <div className="laptop_image">
+            <img src={laptop} alt="laptop" />
+          </div>
         </div>
 
         {/* Persona Card */}
         <div className="card persona">
-          <h4>My Persona</h4>
+          <h4>My Hobbies</h4>
           <p>Know me as a person</p>
           <div className="persona_tags">
             <span>Traveller ✈️</span>
             <span>Social-animal 😍</span>
-            <span>Photographer 📸</span>
+            <span>Cooking lover 👩‍🍳</span>
             <span>Fitness Enthusiast 💪</span>
+            <span>Yoga 🧘</span>
           </div>
         </div>
       </div>

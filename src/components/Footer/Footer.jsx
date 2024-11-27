@@ -7,7 +7,11 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer_container container">
-        <h1 className="footer_title">VP</h1>
+        <h1 className="footer_title link">
+          <a className="footer_title link" href="#top">
+            VP
+          </a>
+        </h1>
         <ul className="footer_list">
           <li>
             <a href="#about" className="footer_link">
@@ -32,7 +36,7 @@ const Footer = () => {
         </ul>
         <div className="footer_social">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/veronika.sergienko"
             className="footer-social_link"
             target="_blank"
             rel="noopener noreferrer"
@@ -42,7 +46,7 @@ const Footer = () => {
             </i>
           </a>
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/in/veronika-potomakha/"
             className="footer-social_link"
             target="_blank"
             rel="noopener noreferrer"
@@ -52,7 +56,7 @@ const Footer = () => {
             </i>
           </a>
           <a
-            href="https://github.com/"
+            href="https://github.com/NikkiPotomakha"
             className="footer-social_link"
             target="_blank"
             rel="noopener noreferrer"
