@@ -1,7 +1,9 @@
 .qualification__container {
     margin: 0 auto;
 }
-
+.qualification_section {
+    scroll-margin-top: 100px;
+}
 .qualification__tabs {
     display: flex;
     justify-content: center;

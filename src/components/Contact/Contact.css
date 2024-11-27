@@ -7,7 +7,9 @@
     padding-bottom: 3rem;
     margin-top: 2rem; /* Extra margin to adjust the section */
 }
-
+.contact_section {
+    scroll-margin-top: 100px;
+}
 .section_title {
     font-size: 29px;
     justify-content: center;
