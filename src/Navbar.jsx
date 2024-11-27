@@ -8,7 +8,7 @@ const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
 
   const toggleMenu = () => {
-    setOpenMenu(!openMenu); // Перемикаємо стан меню
+    setOpenMenu(!openMenu); 
   };
 
   return (
@@ -18,7 +18,14 @@ const Navbar = () => {
       <nav className="nav-wrapper">
         <div className="nav-content">
           <div className="logo-icon">
-            <a className="logo link" href="/">
+            <a
+              className="logo link"
+              href="/"
+              onClick={(e) => {
+                e.preventDefault(); 
+                window.location.reload();
+              }}
+            >
               V<span className="logo link">P</span>
             </a>
           </div>
@@ -56,7 +63,6 @@ const Navbar = () => {
           </ul>
           <button className="menu-btn" onClick={toggleMenu}>
             <FontAwesomeIcon icon={openMenu ? faXmark : faBars} />{" "}
-            {/* Змінюємо іконку на X, коли меню відкрите */}
           </button>
         </div>
       </nav>
