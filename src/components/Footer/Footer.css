@@ -1,9 +1,17 @@
 .footer {
-    background-color: linear-gradient(90deg, #e372e9 0%, #d2c3d0 100%);
+
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Вирівнює всі елементи по центру */
+    justify-content: center; /* Вертикальне центрування */
+    text-align: center;
+    gap: 1.5rem; /* Проміжок між блоками */
 }
 .footer_container {
     padding: 2rem 0 2rem;
+     width: 100%;
+    max-width: 1200px;
 }
 .footer_title,
 .footer_link {
@@ -13,12 +21,13 @@
     font-family: "Playfair Display", sans-serif;
     text-decoration:underline;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .footer_link {
     color: #212121;
     text-decoration: none; 
     scroll-behavior: smooth;
+    font-size: 1rem;
 }
 .footer_link:hover {
 color: #945e90;
@@ -27,13 +36,14 @@ color: #945e90;
     display: flex;
     justify-content: center;
     column-gap: 2rem;
-    margin-bottom: 2rem;
+     padding: 0;
+    margin: 2rem;
     list-style: none;
 }
 .footer_social {
     display: flex;
     justify-content: center;
-    column-gap: 20px;
+    column-gap: 1.5rem;
 }
 .footer-social_link {
     background-color: #212121;
